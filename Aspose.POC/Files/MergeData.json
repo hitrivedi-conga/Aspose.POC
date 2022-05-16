@@ -1,0 +1,78 @@
+{
+  "MergeData": {
+    "Agreement_Number": 0.006,
+    "Agreement_Name": "LINQ Reporting Engine",
+    "TAV": 250,
+    "StartDate": "2020-04-01",
+    "EndDate": "2021-03-31",
+    "Term": 15,
+    "Orders": [
+      {
+        "OrderID": "O0016",
+        "BillTo": "John Smith",
+        "OrderDate": "2021-03-01",
+        "Products": [
+          {
+            "Name": "CLM System",
+            "UnitPrice": 1050.50,
+            "Quantity": 4,
+            "Category": {
+              "Name": "CRM",
+              "Discount": 8
+            }
+          },
+          {
+            "Name": "CPQ System",
+            "UnitPrice": 200.80,
+            "Quantity": 2,
+            "Category": {
+              "Name": "CRM",
+              "Discount": 8
+            }
+          }
+        ]
+      },
+      {
+        "OrderID": "O0024",
+        "BillTo": "John Smith",
+        "OrderDate": "2021-01-15",
+        "Products": [
+          {
+            "Name": "XAutor",
+            "UnitPrice": 500.45,
+            "Quantity": 1,
+            "Category": {
+              "Name": "Template Builder",
+              "Discount": 10
+            }
+          },
+          {
+            "Name": "Composer",
+            "UnitPrice": 100.00,
+            "Quantity": 2,
+            "Category": {
+              "Name": "Document Processing",
+              "Discount": 5
+            }
+          },
+          {
+            "Name": "MergeService",
+            "UnitPrice": 106.75,
+            "Quantity": 2,
+            "Category": {
+              "Name": "Document Processing",
+              "Discount": 5
+            }
+          }
+        ]
+      }
+    ],
+    "ACCOUNT_NAME": "Conga",
+    "Clause": {
+      "ClauseId": "C_Quote.docx"
+    },
+    "DAR": {
+      "ClauseId": "C_Dar.docx"
+    }
+  }
+}
