@@ -68,6 +68,11 @@
       }
     ],
     "ACCOUNT_NAME": "Conga",
+    "Apttus__APTS_Agreement__c": {
+      "Apttus__Account__c": {
+        "account_name_c": "GEHC Account"
+      }
+    },
     "Clause": {
       "ClauseId": "C_Quote.docx"
     },
