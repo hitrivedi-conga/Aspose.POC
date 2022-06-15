@@ -99,7 +99,7 @@ namespace Aspose.POC
             // Set the second cell to 2/3 of the page width.
             builder.CellFormat.PreferredWidth = PreferredWidth.FromPercent(100 * 2 / 3);
 
-            builder.Write("(C) 2001 Aspose Pty Ltd. All rights reserved.");
+            builder.Write("(C) 2022 Aspose Pty Ltd. All rights reserved.");
 
             // Align this text to the right.
             builder.CurrentParagraph.ParagraphFormat.Alignment = ParagraphAlignment.Right;
