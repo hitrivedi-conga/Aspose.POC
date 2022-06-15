@@ -11,6 +11,12 @@ namespace Aspose.POC {
             // Load the template document.
             Document doc = new Document(Common.FilePath + fileName);
 
+            // TableOfContent
+            GenerateDocumentExtension.TableOfContent(doc);
+
+            // Adding Header-Footer
+            GenerateDocumentExtension.AddingHeader_Footer(doc);
+
             var jsonStream = Common.PreProcessMergeData(Common.FilePath + "MergeData.json");
             JsonDataSource jsonDataSource = new JsonDataSource(jsonStream);
 
