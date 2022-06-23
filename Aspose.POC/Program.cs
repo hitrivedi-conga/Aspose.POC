@@ -9,9 +9,10 @@ namespace Aspose.POC {
             Console.WriteLine("Main program started...");
 
             Console.WriteLine("=====================================================");
-            GenerateDocument.Run();
+            //GenerateDocument.Run();
             //CreateWordPackage.Run();
             //Compare.Run();
+            PdfSecurity.Run();
             Console.WriteLine("=====================================================");
 
             Console.WriteLine("\n\nMain program finished. Press any key to exit....");

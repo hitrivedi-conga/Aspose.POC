@@ -169,7 +169,7 @@ namespace Aspose.POC
             DocumentBuilder builder = new DocumentBuilder(doc);
 
             // Specify font formatting
-            Font font = builder.Font;
+            Words.Font font = builder.Font;
             font.Size = 16;
             font.Bold = true;
             font.Color = System.Drawing.Color.Blue;
