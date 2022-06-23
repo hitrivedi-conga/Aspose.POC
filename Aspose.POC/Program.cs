@@ -10,6 +10,7 @@ namespace Aspose.POC {
 
             Console.WriteLine("=====================================================");
             //GenerateDocument.Run();
+            ConvertDocxToPDF.Run();
             //CreateWordPackage.Run();
             //Compare.Run();
             PdfSecurity.Run();

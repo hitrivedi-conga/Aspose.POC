@@ -1,0 +1,35 @@
+{
+  "MergeDataMSA": {
+    "Agreement_StartDate": "2020-04-01",
+    "Account_Name": "LINQ Reporting Engine",
+    "Term": 15
+  },
+  "Renewal_Term": 10,
+  "Renewal_Notice": 5,
+  "DAR": {
+    "ClauseId": "Priceline MSA renewal clause.docx"
+  },
+  "Full_Name": "Sandhya Jangeti",
+  "Street": "Colony",
+  "City": "Bangalore",
+  "State": "Karnataka",
+  "Postal_Code": 500045,
+  
+  "Agreement_Number": 0.006,
+  "Account_Name": "LINQ Reporting Engine",
+  "Agreement_StartDate": "2020-04-01",
+  "Agreement_EndDate": "2021-03-31",
+  "FullName": "Sandhya Jangeti",
+  "Email": "sjangeti@conga.com",
+  "Business_Phone": 8973218976,
+  "Clause": {
+    "ClauseId": "Priceline SOW.docx"
+  },
+  "DA": {
+    "ClauseId": "Priceline SOW2.docx"
+  }
+}
+
+
+
+ 

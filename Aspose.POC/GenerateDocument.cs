@@ -7,17 +7,11 @@ namespace Aspose.POC {
         public static void Run() {
             Console.WriteLine("\nGenerateDocument processing started...");
 
-            string fileName = "MasterAsposeTemplate.docx";
+            string fileName = "IGTD New equipment and disposable.docx";
             // Load the template document.
             Document doc = new Document(Common.FilePath + fileName);
 
-            // TableOfContent
-            GenerateDocumentExtension.TableOfContent(doc);
-
-            // Adding Header-Footer
-            GenerateDocumentExtension.AddingHeader_Footer(doc);
-
-            var jsonStream = Common.PreProcessMergeData(Common.FilePath + "MergeData.json");
+            var jsonStream = Common.PreProcessMergeData(Common.FilePath + "MergeDataPhilips.json");
             JsonDataSource jsonDataSource = new JsonDataSource(jsonStream);
 
             // Create a Reporting Engine.
