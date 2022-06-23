@@ -21,8 +21,11 @@ namespace Aspose.POC {
             return assemblyLocation.Replace(substr, string.Empty) + "Files\\";
         }
 
-        public static string GetOutputFilePath(String inputFilePath) {
-            string extension = Path.GetExtension(inputFilePath);
+        public static string GetOutputFilePath(String inputFilePath, string extension = null) {
+            if (string.IsNullOrEmpty(extension))
+            {
+                  extension = Path.GetExtension(inputFilePath);
+            }
             string filename = Path.GetFileNameWithoutExtension(inputFilePath);
             return path + filename + "_out_" + extension;
         }
@@ -31,11 +34,62 @@ namespace Aspose.POC {
             string json = File.ReadAllText(jsonFilePath);
             dynamic jsonObj = JsonConvert.DeserializeObject(json);
 
-            var clauseId = jsonObj["MergeData"]["Clause"]["ClauseId"];
-            jsonObj["MergeData"]["Clause"]["ClauseId"] = Common.FilePath + clauseId;
+            //MasterAsposeTemplate
+            //var clauseId = jsonObj["MergeData"]["Clause"]["ClauseId"];
+            //jsonObj["MergeData"]["Clause"]["ClauseId"] = Common.FilePath + clauseId;
 
-            var clauseIdDar = jsonObj["MergeData"]["DAR"]["ClauseId"];
-            jsonObj["MergeData"]["DAR"]["ClauseId"] = Common.FilePath + clauseIdDar;
+            //var clauseIdDar = jsonObj["MergeData"]["DAR"]["ClauseId"];
+            //jsonObj["MergeData"]["DAR"]["ClauseId"] = Common.FilePath + clauseIdDar;
+
+            //MSA Template
+            //var clauseIdDar = jsonObj["MergeDataMSA"]["DAR"]["ClauseId"];
+            //jsonObj["MergeDataMSA"]["DAR"]["ClauseId"] = Common.FilePath + clauseIdDar;
+
+            //var clauseId = jsonObj["MergeDataMSA"]["Clause"]["ClauseId"];
+            //jsonObj["MergeDataMSA"]["Clause"]["ClauseId"] = Common.FilePath + clauseId;
+
+            ////var clauseDar = jsonObj["MergeDataMSA"]["DA"]["ClauseId"];
+            //jsonObj["MergeDataMSA"]["DA"]["ClauseId"] = Common.FilePath + clauseDar;
+
+            //IGTD NEW Equipment and disposable Template
+            var clauseId = jsonObj["MergeDataPhilips"]["Clause"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Clause"]["ClauseId"] = Common.FilePath + clauseId;
+
+            var clauseIdDar = jsonObj["MergeDataPhilips"]["DAR"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["DAR"]["ClauseId"] = Common.FilePath + clauseIdDar;
+
+            var disposable = jsonObj["MergeDataPhilips"]["Disposable"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Disposable"]["ClauseId"] = Common.FilePath + disposable;
+
+            var equipment = jsonObj["MergeDataPhilips"]["Equipment"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Equipment"]["ClauseId"] = Common.FilePath + equipment;
+
+            var returns = jsonObj["MergeDataPhilips"]["Returns"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Returns"]["ClauseId"] = Common.FilePath + returns;
+
+            var returns2 = jsonObj["MergeDataPhilips"]["Returns2"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Returns2"]["ClauseId"] = Common.FilePath + returns2;
+
+            var returns3 = jsonObj["MergeDataPhilips"]["Returns3"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Returns3"]["ClauseId"] = Common.FilePath + returns3;
+
+            var returns4 = jsonObj["MergeDataPhilips"]["Returns4"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Returns4"]["ClauseId"] = Common.FilePath + returns4;
+
+            var returns5 = jsonObj["MergeDataPhilips"]["Returns5"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Returns5"]["ClauseId"] = Common.FilePath + returns5;
+
+            var Notices = jsonObj["MergeDataPhilips"]["Notices"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Notices"]["ClauseId"] = Common.FilePath + Notices;
+
+            var Confident = jsonObj["MergeDataPhilips"]["Confident"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Confident"]["ClauseId"] = Common.FilePath + Confident;
+
+            var Idemnity = jsonObj["MergeDataPhilips"]["Idemnity"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Idemnity"]["ClauseId"] = Common.FilePath + Idemnity;
+
+            var Limitation = jsonObj["MergeDataPhilips"]["Limitation"]["ClauseId"];
+            jsonObj["MergeDataPhilips"]["Limitation"]["ClauseId"] = Common.FilePath + Limitation;
 
             var output = JsonConvert.SerializeObject(jsonObj, Formatting.Indented);
 

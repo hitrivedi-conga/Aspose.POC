@@ -1,0 +1,43 @@
+{
+  "MergeDataPhilips": {
+    "Clause": {
+      "ClauseId": "Price_Taxes.docx"
+    },
+    "DAR": {
+      "ClauseId": "Disposable_section3.docx"
+    },
+    "Disposable": {
+      "ClauseId": "Disposable_5.1.docx"
+    },
+    "Equipment": {
+      "ClauseId": "Equipment.docx"
+    },
+    "Returns": {
+      "ClauseId": "Disposable_returns6.1.docx"
+    },
+    "Returns2": {
+      "ClauseId": "6.2.docx"
+    },
+    "Returns3": {
+      "ClauseId": "6.3.docx"
+    },
+    "Returns4": {
+      "ClauseId": "6.4.docx"
+    },
+    "Returns5": {
+      "ClauseId": "6.5.docx"
+    },
+    "Notices": {
+      "ClauseId": "Notices.docx"
+    },
+    "Confident": {
+      "ClauseId": "Confident.docx"
+    },
+    "Idemnity": {
+      "ClauseId": "Idemnity.docx"
+    },
+    "Limitation": {
+      "ClauseId": "Limitation.docx"
+    }
+  }
+}

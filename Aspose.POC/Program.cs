@@ -9,7 +9,8 @@ namespace Aspose.POC {
             Console.WriteLine("Main program started...");
 
             Console.WriteLine("=====================================================");
-            GenerateDocument.Run();
+            //GenerateDocument.Run();
+            ConvertDocxToPDF.Run();
             //CreateWordPackage.Run();
             //Compare.Run();
             Console.WriteLine("=====================================================");
