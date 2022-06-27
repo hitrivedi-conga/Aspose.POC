@@ -13,7 +13,7 @@ namespace Aspose.POC {
             ConvertDocxToPDF.Run();
             //CreateWordPackage.Run();
             //Compare.Run();
-            PdfSecurity.Run();
+            //PdfSecurity.Run();
             Console.WriteLine("=====================================================");
 
             Console.WriteLine("\n\nMain program finished. Press any key to exit....");
