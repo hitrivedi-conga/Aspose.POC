@@ -42,6 +42,9 @@
     <Reference Include="Aspose.Words.Pdf2Word, Version=22.7.0.0, Culture=neutral, PublicKeyToken=716fcc553a201e56, processorArchitecture=MSIL">
       <HintPath>..\packages\Aspose.Words.22.7.0\lib\net461\Aspose.Words.Pdf2Word.dll</HintPath>
     </Reference>
+    <Reference Include="Conga.DocGen.DataSet">
+      <HintPath>Files\Conga.DocGen.DataSet.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -62,18 +65,23 @@
     <Compile Include="CreateWordPackage.cs" />
     <Compile Include="GenerateDocument.cs" />
     <Compile Include="GenerateDocumentExtension.cs" />
+    <Compile Include="XATemplateExample\GenerateDocumentXA.cs" />
     <Compile Include="PdfSecurity.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SecureDocumentRequest.cs" />
     <Compile Include="Sender.cs" />
+    <Compile Include="XATemplateExample\ITemplateDataSource.cs" />
+    <Compile Include="XATemplateExample\TemplateDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="Files\setsecurityInputPdf.pdf" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Files\DataSet-NewDataSet.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+      <xs:complexType>
+        <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="Apttus__APTS_Agreement__c">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element name="apts_agreement_id" type="xs:integer" minOccurs="0" />
+                <xs:element name="apts_agreement_name" type="xs:string" minOccurs="0" />
+                <xs:element name="apts_agreement_contract_start_date" type="xs:date" minOccurs="0" />
+                <xs:element name="apts_agreement_contract_end_date" type="xs:date" minOccurs="0" />
+                <xs:element name="apts_agreement_ff_agreement_number" type="xs:string" minOccurs="0" />
+                <xs:element name="apts_agreement_total_contract_value" type="xs:decimal" minOccurs="0" />
+                <xs:element name="apts_agreement_term_months" type="xs:integer" minOccurs="0" />
+                <xs:element name="apts_agreement_auto_renewal" type="xs:boolean" minOccurs="0" />
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+  </xs:schema>
+  <Apttus__APTS_Agreement__c>
+    <apts_agreement_id>123456</apts_agreement_id>
+    <apts_agreement_name>My Agreement</apts_agreement_name>
+    <apts_agreement_contract_start_date>2022-07-01</apts_agreement_contract_start_date>
+    <apts_agreement_contract_end_date>2024-06-30</apts_agreement_contract_end_date>
+    <apts_agreement_ff_agreement_number>A123456</apts_agreement_ff_agreement_number>
+    <apts_agreement_total_contract_value>123.00</apts_agreement_total_contract_value>
+    <apts_agreement_term_months>36</apts_agreement_term_months>
+    <apts_agreement_auto_renewal>true</apts_agreement_auto_renewal>
+  </Apttus__APTS_Agreement__c>
+</NewDataSet>

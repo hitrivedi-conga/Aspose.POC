@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -135,6 +136,45 @@ namespace Aspose.POC {
             product = new Product() { Name = "XAutor", UnitPrice = 500, Quantity = 1 };
             product.Category = new Category() { Name = "Template Builder", Discount = 10 };
             yield return product;
+        }
+
+        public static string GetDataSetXml(string dataSetSchemaPath) {
+            return File.ReadAllText(dataSetSchemaPath);
+        }
+
+        public static DataSet PrepareDataSet() {
+            var dataSet = new DataSet();
+            var agreementTable = new DataTable("Apttus__APTS_Agreement__c");
+            dataSet.Tables.Add(agreementTable);
+
+            var agreementIdColumn = new DataColumn("apts_agreement_id", typeof(string));
+            agreementIdColumn.Unique = true;
+            agreementTable.Columns.Add(agreementIdColumn);
+
+            var agreementNameColumn = new DataColumn("apts_agreement_name", typeof(string));
+            agreementTable.Columns.Add(agreementNameColumn);
+
+            var agreementStartDateColumn = new DataColumn("apts_agreement_contract_start_date", typeof(DateTime));
+            agreementTable.Columns.Add(agreementStartDateColumn);
+
+            var agreementEndDateColumn = new DataColumn("apts_agreement_contract_end_date", typeof(DateTime));
+            agreementTable.Columns.Add(agreementEndDateColumn);
+
+            var agreementNumberColumn = new DataColumn("apts_agreement_ff_agreement_number", typeof(string));
+            agreementTable.Columns.Add(agreementNumberColumn);
+
+            var agreementContractValueColumn = new DataColumn("apts_agreement_total_contract_value", typeof(Decimal));
+            agreementTable.Columns.Add(agreementContractValueColumn);
+
+            var agreementTermMonthsColumn = new DataColumn("apts_agreement_term_months", typeof(int));
+            agreementTable.Columns.Add(agreementTermMonthsColumn);
+
+            var agreementAutoRenewableColumn = new DataColumn("apts_agreement_auto_renewal", typeof(bool));
+            agreementTable.Columns.Add(agreementAutoRenewableColumn);
+
+            agreementTable.Rows.Add("123456", "Test Agreement", DateTime.Now, DateTime.Now.AddYears(5), "A123456", 1250000, 24, true);
+
+            return dataSet;
         }
     }
 }
